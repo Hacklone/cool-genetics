@@ -13,8 +13,12 @@ export interface ICandidateTestHistoryEntry {
 
 }
 
+export interface ICandidateTestParameters {
+
+}
+
 export interface ICandidateTestFactory {
-  createCandidateTestAsync(): Promise<ICandidateTest>;
+  createCandidateTestAsync(candidateTestParameters?: ICandidateTestParameters): Promise<ICandidateTest>;
 }
 
 export interface ICandidateKnownCandidateTestState {
